@@ -14,13 +14,13 @@ $query = mysqli_query($con, $sql);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
-    <title>Users CRUD</title>
+    <title>Users</title>
 </head>
 
 <body>
     <div class="user-form">
-        <h1>Crear usuario</h1>
-        
+        <h1>Crea tu usuario</h1>
+<center><h1>UTVT</h1><center/>
         
         <form action="insert_user.php" method="POST">
             <input type="text" name="name" placeholder="Nombre">
@@ -34,7 +34,7 @@ $query = mysqli_query($con, $sql);
     </div>
 
     <div class="user-table">
-        <h2>Usuarios registrados</h2>
+        <h2>Anotado</h2>
         <table>
             <thead>
                 <tr>
