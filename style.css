@@ -1,19 +1,14 @@
-* {
-    box-sizing: border-box;
+/* Estilos generales */
+body {
+    background-color: rgb(135, 172, 206); /* Un tono de azul oscuro como fondo */
+    color: #fff; /* Texto blanco para contrastar */
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat', sans-serif; /* Fuente Montserrat para todo el cuerpo */
 }
 
-html {
-    font-family: 'Segoe UI', sans-serif;
-    text-align: center;
-}
-
-a{
-    text-decoration: none;
-}
-
-.users-form form{
+/* Estilos del formulario de usuarios */
+.users-form form {
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -22,76 +17,82 @@ a{
     text-align: center;
 }
 
-.users-form form input{
-    font-family: 'Segoe UI', sans-serif;
+.users-form form input {
+    font-family: 'Montserrat', sans-serif;
 }
 
 .users-form form input[type=text],
 .users-form form input[type=password],
-.users-form form input[type=email]{
-    padding: 8px;
-    border:2px solid #e5d4d4;
-    border-radius:4px;
-    outline:none;
-    transition:.3s;
+.users-form form input[type=email] {
+    padding: 10px; /* Ajusté el padding */
+    border: 2px solid #dd6e62; /* Rojo */
+    border-radius: 5px; /* Bordes más redondeados */
+    outline: none;
+    transition: 0.3s;
 }
 
 .users-form form input[type=text]:focus,
 .users-form form input[type=password]:focus,
-.users-form form input[type=password]:focus{
-    border-color:rgb(42, 94, 146);
-    box-shadow:0 0 6px 0 rgb(123, 172, 221);
+.users-form form input[type=password]:focus {
+    border-color: #e6aea8; /* Rojo más oscuro al enfocar */
+    box-shadow: 0 0 8px 0 #755f5c; /* Sombra roja al enfocar */
 }
 
-.users-form form input[type=submit]{
+.users-form form input[type=submit] {
     border: none;
-    padding: 12px 50px;
+    padding: 12px 20px; /* Ajusté el padding */
     text-decoration: none;
     transition-duration: 0.4s;
     cursor: pointer;
-    border-radius: 5px;
-    background-color: white; 
-    color: rgb(102, 98, 98); 
-    border: 2px solid #60a100;
+    border-radius: 50px; /* Bordes redondos */
+    background-color: #834c46; /* Rojo */
+    color: #fff; /* Texto blanco */
 }
 
 .users-form form input[type=submit]:hover {
-    background-color: #60a100;
-    color: white;
+    background-color: #c0392b; /* Rojo más oscuro al pasar el ratón */
+    color: #fff;
 }
 
-.users-table table{
-    border: 1px solid #ccc;
+/* Estilos de la tabla de usuarios */
+.users-table table {
+    border: 1px solid #e74c3c; /* Borde rojo */
     border-collapse: collapse;
-    margin: 0;
-    padding: 0;
-    width: 100%;
+    margin: 20px auto;
+    width: 80%;
     table-layout: fixed;
 }
 
 table tr {
-    background-color: #f8f8f8;
-    border: 1px solid #ddd;
-    padding: 4px;
+    background-color: #c0392b; /* Fondo rojo */
+    border: 1px solid #c0392b; /* Borde del mismo color que el fondo */
+    padding: 12px;
+    color: #fff;
 }
 
-table th{
+table th {
     padding: 16px;
     text-align: center;
-    font-size: .85em;
+    font-size: 1em;
 }
 
-.users-table--edit{
-    background: #009688;
-    padding: 6px;
-    color: #fff;
-    text-align: center;
-    font-weight: bold;
+.users-table--edit,
+.users-table--delete {
+    display: inline-block; /* Alineados en línea */
+    padding: 10px 20px; /* Ajusté el padding */
+    margin: 5px; /* Espaciado entre botones */
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 20px; /* Bordes redondos */
 }
-.users-table--delete{
-    background: #b11e1e;
-    padding: 6px;
+
+.users-table--edit {
+    background: #d9534f; /* Rojo más claro */
     color: #fff;
-    text-align: center;
-    font-weight: bold;
+}
+
+.users-table--delete {
+    background: #992d2d; /* Rojo oscuro */
+    color: #fff;
 }
